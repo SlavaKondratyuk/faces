@@ -1,0 +1,189 @@
+.block {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+
+}
+
+div[class^="block"] {
+    border: 1px solid black;
+}
+
+.box {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+}
+/*to right-bottom*/
+.red-box {
+    background-color: darkred;
+    top: 60px;
+    left: 90px;
+    z-index: -1;
+}
+
+.green-box {
+    background-color: darkgreen;
+    top: 130px;
+    left: 160px;
+    z-index: -2;
+}
+
+.blue-box {
+    background-color: cornflowerblue;
+    top: 190px;
+    left: 220px;
+    z-index: -3;
+}
+/*to right-top*/
+.red-box1 {
+    background-color: darkred;
+    top: 60px;
+    left: 220px;
+    z-index: 1;
+}
+
+.green-box1 {
+    background-color: darkgreen;
+    top: 130px;
+    left: 160px;
+    z-index: 2;
+}
+
+.blue-box1 {
+    background-color: cornflowerblue;
+    top: 190px;
+    left: 60px;
+    z-index: 1;
+}
+
+/*to right-bottom*/
+.red-box2 {
+    background-color: darkred;
+    top: 60px;
+    left: 90px;
+    z-index: -1;
+}
+
+.green-box2 {
+    background-color: darkgreen;
+    top: 130px;
+    left: 160px;
+    z-index: -2;
+}
+
+.blue-box2 {
+    background-color: cornflowerblue;
+    top: 190px;
+    left: 220px;
+    z-index: -1;
+}
+
+/*for green box*/
+.block-green {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    background-color: lightgreen;
+}
+.box-white1 {
+    top: 60px;
+    left: 60px;
+}
+
+.box-white2 {
+    bottom: 60px;
+    right: 60px;
+}
+
+div .box-white1, .box-white2 {
+    background-color: white;
+}
+
+/*for 3-colored box with circles*/
+.block-high {
+    width: 150px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.circle-red {
+     top: 20px;
+     left: 23px;
+     background-color: darkred;
+ }
+
+.circle-green {
+    top: 140px;
+    left: 23px;
+    background-color: green;
+}
+
+.circle-yellow {
+    top: 260px;
+    left: 23px;
+    background-color: yellow;
+}
+
+/*for face*/
+
+.block-face {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    background-color: lightgreen;
+    border-radius: 200px;
+}
+
+.eyes {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: white;
+}
+
+.left-eye {
+    top: 60px;
+    left: 60px;
+}
+
+.right-eye {
+    top: 60px;
+    right: 60px;
+}
+
+.nose {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 10px;
+    top: 200px;
+    left: 200px;
+    background-color: white;
+    transform: translate( -50%, -50%);
+}
+
+.mouth {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 60px;
+    left: 200px;
+    background-color: white;
+    transform: translate( -50%, 0);
+}
